@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stock.CheckStockWindowController">
+   <children>
+      <TableView fx:id="table" layoutX="-1.0" layoutY="-1.0" prefHeight="380.0" prefWidth="422.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="120.0" text="Name" />
+          <TableColumn fx:id="typeColumn" prefWidth="120.0" text="Type" />
+            <TableColumn fx:id="sizeColumn" prefWidth="120.0" text="Size" />
+            <TableColumn fx:id="countColumn" prefWidth="60.0" text="Count" />
+        </columns>
+      </TableView>
+      <VBox alignment="BASELINE_CENTER" layoutX="432.0" prefHeight="380.0" prefWidth="148.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="3.0">
+               <children>
+                  <TextField fx:id="textField" prefHeight="26.0" prefWidth="103.0" />
+                  <Button mnemonicParsing="false" onAction="#findButtonAction" text="Find" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
